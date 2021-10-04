@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sstfcss.css">
+    <title>Operating System/FCFS Theory</title>
+</head>
+<body>
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <li> <a href ="#implementation"> Implement </a></li>
+            <li> <a href ="#home"> Home </a></li>
+        </ul>
+    </nav>
+    <div class="theory-text">
+        <h2><strong>
+            SSTF Disk Scheduling Algorithm-
+            </strong>
+        </h2><br>
+        <ul>
+            <li>SSTF stands for Shortest Seek Time First.</li>
+            <li>This algorithm services that request next which requires least number of head movements from its current position regardless of the direction.</li>
+            <li>It breaks the tie in the direction of head movement.</li>
+        </ul>
+        <h4>Advantages of SSTF Disk scheduling Algorithm</h4>
+        <p>The advantages of SSTF disk scheduling algorithm are:</p>
+        <ul type="square">
+            <li>Better performance than FCFS scheduling algorithm.</li>
+            <li>It provides better throughput.</li>
+            <li>This algorithm is used in Batch Processing system where throughput is more important.</li>
+            <li>It has less average response and waiting time.</li>
+        </ul><br>
+        <h4>Disadvantages of SSTF Disk Scheduling Algorithm</h4>
+        <p>The disadvantages of SSTF disk scheduling algorithm are:</p>
+        <ul type="square">
+            <li>Starvation is possible for some requests as it favours easy to reach request and ignores the far away processes.</li>
+            <li>Their is lack of predictability because of high variance of response time.</li>
+            <li> direction slows things down.</li>
+        </ul>
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <center>
+                <p> Copyright &copy;. All Rights Reserved </p>
+            </center>
+        </div>
+    </footer>
+
+</body>
+</html>
