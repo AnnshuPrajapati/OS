@@ -81,7 +81,7 @@ function Implement()
             },
             datasets: [
                 {
-                    label: "First Come First Serve (FCFS) Algorithm", data: inputNumbers, lineTension: 0, fill: false, backgroundColor: "rgba(0,145,180, 0.6)", borderColor: "rgba(0,145,155, 0.8)", pointBackgroundColor: "rgba(0,145,155, 0.6)", pointBorderColor: "#db7093", pointHoverBackgroundColor: "#db7093", pointHoverBorderColor: "#db7093", borderWidth: 2.5,
+                    label: "Cscan Algorithm", data: inputNumbers, lineTension: 0, fill: false, backgroundColor: "rgba(0,145,180, 0.6)", borderColor: "rgba(0,145,155, 0.8)", pointBackgroundColor: "rgba(0,145,155, 0.6)", pointBorderColor: "#db7093", pointHoverBackgroundColor: "#db7093", pointHoverBorderColor: "#db7093", borderWidth: 2.5,
                 }
             ]
         },
