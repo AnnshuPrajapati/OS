@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>C-Scan - Implementation</title>
+        <link rel="stylesheet" href="FCFS.css">
+        <script src="js_algo3.js"></script>
+    </head>
+
+    <body style="scroll-behavior: smooth; text-decoration: none; outline: none">
+            <div class="title">
+            </div>
+        </div>
+        <br />
+        <br />
+        <div class="pageContainer">
+            <h1 class="page-title" style="text-align: center; color: brown; font-size: 200%; font-family: 'Times New Roman', Times, serif;">C-Scan Algorithm</h1>
+            <div class="inputs">
+                <div class="number-input">
+                    <label for="numbers"><b>Request Queue:</b>
+                    </label>
+                    <input type="text" name="numbers" id="inputNumbers" class="form-control" placeholder='82 170 43 140 24 16 190'>
+                    <button
+                        onclick="autoGenerate();"
+                        type="submit"
+                        class="btn btn-primary auto-generate" style="background-color: cornsilk;">
+                        Auto Generate
+                    </button>
+                    
+                    <br>
+                </div>
+                <br><br>
+                <div class="start-input">
+                    <div>
+                        <label for="numbers"><b>Current position of R/W Head:</b>
+                        </label>
+                        <input type="text" name="numbers" id="inputHeadPos" class="form-control" placeholder="50">
+                    </div>
+                    <br>
+                    <br>
+                    <div class="btnVisualizeContainer">
+                        <button
+                            onclick="Implement();" id="btnVisualize" type="button" class="btn btn-lg btn-primary" style="background-color: cornsilk;">
+                            Implement
+                        </button>
+                    </div>
+                </div>
+                <div id="ErrorMsg"></div>
+                <br>
+            </div>
+            <div class="canvas">
+                <canvas id="line-chart"></canvas>
+            </div>
+            <div id="count-output"></div>
+        </div>
+
+        <div class="container">
+            <script src="https://cdn.jsdelivr.net/npm/jspdf@1.5.3/dist/jspdf.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        </div>
+    </body>
+</html>

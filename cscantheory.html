@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cscancss.css">
+    <title>Operating System/FCFS Theory</title>
+</head>
+<body>
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <li> <a href ="algo3.html"> Implement </a></li>
+            <li> <a href ="#home"> Home </a></li>
+        </ul>
+    </nav>
+    <div class="theory-text">
+        <h2><strong>
+            C-SCAN Disk Scheduling Algorithm
+            </strong>
+        </h3><br>
+        <p><t>Circular SCAN (C-SCAN) scheduling algorithm is a modified version of SCAN disk scheduling algorithm that deals with the inefficiency of SCAN algorithm by servicing the requests more uniformly. Like SCAN (Elevator Algorithm) C-SCAN moves the head from one end servicing all the requests to the other end. However, as soon as the head reaches the other end, it immediately returns to the beginning of the disk without servicing any requests on the return trip (see chart below) and starts servicing again once reaches the beginning. This is also known as the “Circular Elevator Algorithm” as it essentially treats the cylinders as a circular list that wraps around from the final cylinder to the first one.</h4>
+        <h3>Algorithm</h3>
+        <ul type="square">
+            
+            <li> Let Request array represents an array storing indexes of tracks that have been requested in ascending order of their time of arrival. ‘head’ is the position of disk head.</li>
+            <li> The head services only in the right direction from 0 to size of the disk.</li>
+            <li>While moving in the left direction do not service any of the tracks.</li>
+            <li>When we reach at the beginning(left end) reverse the direction.
+            <li> While moving in right direction it services all tracks one by one.</li>
+            <li>moving in right direction calculate the absolute distance of the track from the head.</li>
+            <li>Increment the total seek count with this distance.</li>
+            <li>Currently serviced track position now becomes the new head position.</li>
+            <li>Go to step 6 until we reach at right end of the disk.</li>
+            <li>If we reach at the right end of the disk reverse the direction and go to step 3 until all tracks in request array have not been serviced.</li>
+
+
+        </ul><br>
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <center>
+                <p> Copyright &copy;. All Rights Reserved </p>
+            </center>
+        </div>
+    </footer>
+
+</body>
+</html>
